@@ -1,0 +1,37 @@
+{
+  "model_name": "indobenchmark/indobert-base-p1",
+  "max_length": 256,
+  "embedding_dim": 1536,
+  "binary_threshold": 0.5071738362312317,
+  "binary_classes": [
+    "No Distortion",
+    "Distortion"
+  ],
+  "multi_classes": [
+    "All-or-nothing",
+    "Discounting the positives",
+    "Emotional Reasoning",
+    "Fortune-telling",
+    "Labeling",
+    "Magnification or Minimization",
+    "Mental filter",
+    "Mind Reading",
+    "Overgeneralization",
+    "Personalization and Blame",
+    "Should statement"
+  ],
+  "performance": {
+    "binary": {
+      "train_accuracy": 0.9945,
+      "test_accuracy": 0.9149,
+      "test_accuracy_opt_threshold": 0.9159,
+      "auc_roc": 0.9705,
+      "best_iteration": 227
+    },
+    "multi_class": {
+      "train_accuracy": 0.9913,
+      "test_accuracy": 0.6873,
+      "best_iteration": 113
+    }
+  }
+}
